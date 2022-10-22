@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Login</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="row">
+            <div class="left-container col d-flex justify-content-center">
+                <div class="form-container">
+                    <div class="form-title">
+                        <h1 class="text-center">Student Login</h1>
+                    </div>
+                    <form class="row g-3 d-flex justify-content-center">
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="email" class="form-control input-field" id="input-email" placeholder="Email">
+                            <i id="email-icon" class="fas fa-user form-icon"></i>
+                            <i id="warn-icon-email" class="fas fa-exclamation"></i>
+                            <i id="check-icon-email" class="fas fa-check"></i>
+                        </div>
+                        <div class="col-auto input d-flex align-items-center">
+                            <input type="password" class="form-control input-field" id="input-pass"
+                                placeholder="Password">
+                            <i id="pass-icon" class="fas fa-lock form-icon"></i>
+                            <i id="warn-icon-pass" class="fas fa-exclamation"></i>
+                            <i id="check-icon-pass" class="fas fa-check"></i>
+                        </div>
+                        <div class="captcha d-flex justify-content-center">
+                            <div class="g-recaptcha" data-sitekey="6LeMzYciAAAAADMHS2BVd9tr7gB7fzsSROpba0zo"></div>
+                        </div>
+                        <div class="button d-flex justify-content-center">
+                            <button type="submit" disabled id="id-login-btn"
+                                class="btn btn-success mb-3 login-btn">Login</button>
+                        </div>
+                    </form>
+                    <div>
+                        <div class="button d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary mb-3 resetpass-btn">Reset Password</button>
+                        </div>
+                    </div>
+                    <div class="reg-container" onmouseenter="this.classList.add('paused')">
+                        <div class="d-flex justify-content-center reg-title">
+                            <h4>Have not registered yet?</h4>
+                        </div>
+                        <div class="reg-btn d-flex justify-content-center align-items-between">
+                            <button type="submit" class="btn btn-success mb-3 student-reg-btn">Register as
+                                Student</button>
+                            <button type="submit" class="btn btn-success mb-3 alumni-reg-btn">Register as
+                                Alumni</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-container col d-flex justify-content-center">
+                <!-- <img class="login-side-img" src="./img/nsu-logo-small.png" width="122px" height="155px" alt=""
+                    srcset=""> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/bcae4cb038.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+
+</html>
+
+
+<!-- site key = 6LeMzYciAAAAADMHS2BVd9tr7gB7fzsSROpba0zo
+secret key = 6LeMzYciAAAAALagvQXlAnN2Kv4iRGQnDryxcl6V -->

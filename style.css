@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@keyframes move {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes jumpX {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-10px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+hr {
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.main-container {
+    padding: 10px;
+    height: 780px;
+    background-image: url("./img/nsu-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.left-container {
+    height: 1000px;
+    width: 1000px;
+    margin-top: -100px;
+    border-radius: 0px 50% 50% 0px;
+    background-image: linear-gradient(to right, rgba(0, 0, 44, 0.85), rgba(0, 97, 161, 0.85));
+    box-shadow: 1px 5px 20px black;
+    /* animation: move 2s ease 0s infinite alternate;
+    animation-play-state: running;
+    ; */
+}
+
+.right-container {
+    height: 750px;
+    border-radius: 15px;
+}
+
+.form-container {
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 120px;
+    width: 500px;
+    margin-left: -100px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-field {
+    text-indent: 25px;
+    border-radius: 20px;
+    height: 40px;
+    width: 350px;
+    border: none;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    transform: scale(1.05);
+    margin: 0px 7px;
+}
+
+#email-field {
+    border: none;
+}
+
+/* .red-border{
+    border: 2px solid #32a345;
+} */
+
+.jump {
+    animation: move 0.5s ease infinite;
+    animation-iteration-count: 1;
+}
+
+.form-icon {
+    margin-left: 15px;
+    color: grey;
+    position: absolute;
+}
+
+#warn-icon-email,
+#warn-icon-pass {
+    display: none;
+    margin-left: 325px;
+    position: absolute;
+    color: rgb(255, 0, 0);
+}
+
+#check-icon-email,
+#check-icon-pass {
+    display: none;
+    margin-left: 322px;
+    position: absolute;
+    color: rgb(2, 184, 2);
+}
+
+.reg-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    /* box-shadow: 1px 2px 10px black; */
+    animation: move 1.5s ease infinite;
+    animation-iteration-count: 2;
+}
+
+.login-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    /* background-color: #1d89bb; */
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+    background-color: #0b693e;
+    box-shadow: 2px 5px 10px black;
+    /* color: black; */
+}
+
+.login-side-img {
+    margin-top: 120px;
+}
+
+.form-title {
+    padding: 20px;
+    color: white;
+}
+
+.form-title h1 {
+    margin-bottom: 10px;
+}
+
+.resetpass-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
+    background-color: #044896;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.resetpass-btn:hover {
+    transform: scale(1.03);
+    background-color: #033b7c;
+    box-shadow: 2px 5px 10px black;
+    /* color: black; */
+}
+
+.student-reg-btn {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(0, 97, 161, 0.85);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.student-reg-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 5px 10px black;
+    background-color: rgba(4, 80, 131, 0.85);
+    /* color: black; */
+}
+
+.alumni-reg-btn {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(0, 97, 161, 0.85);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.alumni-reg-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 5px 10px black;
+    background-color: rgba(4, 80, 131, 0.85);
+    /* color: black; */
+}
+
+.reg-title {
+    padding: 30px 0px 10px 0px;
+    color: white;
+}
+
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media only screen and (max-width: 545px) {
+    .form-container {
+        margin-left: 2px
+    }
+
+    .left-container {
+        border-radius: 0px 0% 0% 0px;
+    }
+
+    .reg-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alumni-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .student-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:545px) and (max-width: 991px) {
+    .form-container {
+        margin-left: -30px
+    }
+
+    .left-container {
+        border-radius: 0px 50% 50% 0px;
+    }
+
+    .reg-container {
+        margin-left: 50px;
+        width: 80%;
+    }
+
+    .reg-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alumni-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .student-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:991px) and (max-width: 1099px) {
+    .form-container {
+        width: 80%;
+        margin-left: 2px
+    }
+
+    .left-container {
+        border-radius: 0px 50% 50% 0px;
+    }
+
+    .right-container {
+        width: 0%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .reg-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alumni-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    .student-reg-btn {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width: 1300px) {
+    .form-container {
+        width: 80%;
+        margin-left: 2px
+    }
+
+    .left-container {
+        border-radius: 0px 50% 50% 0px;
+    }
+
+    .form-container {
+        margin-left: -80px;
+    }
+
+    .reg-container {
+        /* margin-left: 5px; */
+        width: 110%;
+    }
+
+    .right-container {
+        width: 0%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .alumni-reg-btn {
+        margin-right: 30px;
+    }
+
+    .student-reg-btn {
+        margin-left: 30px;
+    }
+}
